@@ -27,7 +27,7 @@ jobs:
           restore-keys: android-obfuscheck-baseline-
 
       - id: obf
-        uses: ykus4/android-obfuscheck@v0.1.0
+        uses: qusamulab/android-obfuscheck@v0.1.0
         with:
           path: app/build/outputs/apk/release/app-release-unsigned.apk
           min-coverage: "0.6"

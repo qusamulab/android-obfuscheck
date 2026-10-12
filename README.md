@@ -36,7 +36,7 @@ PASS
 ## Install
 
 ```sh
-pip install 'android-obfuscheck[ml] @ git+https://github.com/ykus4/android-obfuscheck'
+pip install 'android-obfuscheck[ml] @ git+https://github.com/qusamulab/android-obfuscheck'
 pip install apkid    # optional, for --apkid / --require-compiler / --forbid
 ```
 
@@ -125,7 +125,7 @@ so only load ones you trust. To train on your own data, use a CSV with `text,lab
 ## GitHub Action
 
 ```yaml
-- uses: ykus4/android-obfuscheck@v0.1.0
+- uses: qusamulab/android-obfuscheck@v0.1.0
   with:
     path: app/build/outputs/apk/release/app-release-unsigned.apk
     min-coverage: "0.6"
